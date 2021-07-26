@@ -12,16 +12,16 @@ Going after the <a href="https://hecochain-hackathon.devpost.com/rules" target="
 
 Prerequisites: [Node](https://nodejs.org/en/download/) plus [Yarn](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
 
-> clone/fork 🏗 scaffold-eth:
+> clone/fork 🏗 hecobase:
 
 ```bash
-git clone https://github.com/austintgriffith/scaffold-eth.git
+git clone https://github.com/cbonoz/hecobase.git
 ```
 
 > install and start your 👷‍ Hardhat chain:
 
 ```bash
-cd scaffold-eth
+cd hecobase
 yarn install
 yarn chain
 ```
@@ -29,14 +29,14 @@ yarn chain
 > in a second terminal window, start your 📱 frontend:
 
 ```bash
-cd scaffold-eth
+cd hecobase
 yarn start
 ```
 
 > in a third terminal window, 🛰 deploy your contract:
 
 ```bash
-cd scaffold-eth
+cd hecobase
 yarn deploy
 ```
 
@@ -48,15 +48,17 @@ yarn deploy
 
 📱 Open http://localhost:3000 to see the app
 
-
 ## Useful links
+
 ### Mainnet:
-* https://docs.hecochain.com/#/en-us/mainnet
+
+- https://docs.hecochain.com/#/en-us/mainnet
 
 ### Testnet:
-* https://docs.hecochain.com/#/en-us/testnet
-* https://scan-testnet.hecochain.com/faucet
+
+- https://docs.hecochain.com/#/en-us/testnet
+- https://scan-testnet.hecochain.com/faucet
 
 Heco contracts
-* https://testnet.hecoinfo.com/address/0x7af326b6351c8a9b8fb8cd205cbe11d4ac5fa836#contracts
 
+- https://testnet.hecoinfo.com/address/0x7af326b6351c8a9b8fb8cd205cbe11d4ac5fa836#contracts

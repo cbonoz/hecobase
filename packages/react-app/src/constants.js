@@ -174,3 +174,6 @@ export const NETWORK = chainId => {
 
 // Change this target network.
 export const TARGET_NETWORK = NETWORKS.hecoTest; // or use NETWORKS.heco for main net.
+
+export const APP_NAME = "Hecobase"
+export const APP_DESCRIPTION = "Scaffold your HECO blockchain project"
