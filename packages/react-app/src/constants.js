@@ -74,6 +74,25 @@ export const NETWORKS = {
     faucet: "https://faucet.matic.network/",
     blockExplorer: "https://explorer-mainnet.maticvigil.com//",
   },
+  hecoTest: {
+    name: "Heco Testnet",
+    color: "#2bbdf7",
+    chainId: 256,
+    price: 1,
+    gasPrice: 1000000000,
+    rpcUrl: "https://http-testnet.hecochain.com",
+    faucet: "https://scan-testnet.hecochain.com/faucet",
+    blockExplorer: "https://scan-testnet.hecochain.com",
+  },
+  heco: {
+    name: "Heco Mainnet",
+    color: "#2bbdf7",
+    chainId: 128,
+    price: 1,
+    gasPrice: 1000000000,
+    rpcUrl: "https://http-mainnet.hecochain.com",
+    blockExplorer: "https://hecoinfo.com",
+  },
   mumbai: {
     name: "mumbai",
     color: "#92D9FA",
@@ -152,3 +171,6 @@ export const NETWORK = chainId => {
     }
   }
 };
+
+// Change this target network.
+export const TARGET_NETWORK = NETWORKS.hecoTest; // or use NETWORKS.heco for main net.

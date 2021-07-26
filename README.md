@@ -1,13 +1,14 @@
-# 🏗 Scaffold-ETH
+# Hecobase
 
-> everything you need to build on Ethereum! 🚀
+Hecobase is a starter project for connecting and testing your smart contracts on Heco networks (testnet and mainnet).
 
-🧪 Quickly experiment with Solidity using a frontend that adapts to your smart contract:
+Bootstrap your projects and get deploying on the Heco main and test networks in no time.
 
-![image](https://user-images.githubusercontent.com/2653167/124158108-c14ca380-da56-11eb-967e-69cde37ca8eb.png)
+Going after the <a href="https://hecochain-hackathon.devpost.com/rules" target="_blank">Toolkits on HECO</a> category challenge for the hecochain hackathon.
 
+## Motivation
 
-# 🏄‍♂️ Quick Start
+## Quick Start
 
 Prerequisites: [Node](https://nodejs.org/en/download/) plus [Yarn](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
 
@@ -47,47 +48,15 @@ yarn deploy
 
 📱 Open http://localhost:3000 to see the app
 
-# 📚 Documentation
 
-Documentation, tutorials, challenges, and many more resources, visit: [docs.scaffoldeth.io](https://docs.scaffoldeth.io)
+## Useful links
+### Mainnet:
+* https://docs.hecochain.com/#/en-us/mainnet
 
-# 🔭 Learning Solidity
+### Testnet:
+* https://docs.hecochain.com/#/en-us/testnet
+* https://scan-testnet.hecochain.com/faucet
 
-📕 Read the docs: https://docs.soliditylang.org
+Heco contracts
+* https://testnet.hecoinfo.com/address/0x7af326b6351c8a9b8fb8cd205cbe11d4ac5fa836#contracts
 
-📚 Go through each topic from [solidity by example](https://solidity-by-example.org) editing `YourContract.sol` in **🏗 scaffold-eth**
-
-- [Primitive Data Types](https://solidity-by-example.org/primitives/)
-- [Mappings](https://solidity-by-example.org/mapping/)
-- [Structs](https://solidity-by-example.org/structs/)
-- [Modifiers](https://solidity-by-example.org/function-modifier/)
-- [Events](https://solidity-by-example.org/events/)
-- [Inheritance](https://solidity-by-example.org/inheritance/)
-- [Payable](https://solidity-by-example.org/payable/)
-- [Fallback](https://solidity-by-example.org/fallback/)
-
-📧 Learn the [Solidity globals and units](https://solidity.readthedocs.io/en/v0.6.6/units-and-global-variables.html)
-
-# 🛠 Buidl
-
-Check out all the [active branches](https://github.com/austintgriffith/scaffold-eth/branches/active), [open issues](https://github.com/austintgriffith/scaffold-eth/issues), and join/fund the 🏰 [BuidlGuidl](https://BuidlGuidl.com)!
-
-
-# 💬 Support Chat
-
-Join the telegram [support chat 💬](https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA) to ask questions and find others building with 🏗 scaffold-eth!
-
----
-
-🎛 Any web3 dev environment is complex, that's why 🏗 Scaffold-ETH comes with everything you need, already working together:
-
-- Hardhat for your local blockchain, deploying, and testing smart contracts.
-- React for building a frontend, using many useful pre-made components and hooks.
-- Ant for your UI. (You can easily changed to another library you prefer)
-- Surge / S3 / IPFS for publishing your app.
-- Tenderly / The Graph / Etherscan / Infura / Blocknative for infrastructure.
-- Support for L2 / Sidechains like Optimism and Arbitrum.
-
----
-
-🙏 Please check out our [Gitcoin grant](https://gitcoin.co/grants/2851/scaffold-eth) too!
