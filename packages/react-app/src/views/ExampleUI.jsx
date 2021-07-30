@@ -38,18 +38,18 @@ export default function ExampleUI({
             onClick={async () => {
               /* look how you call setPurpose on your contract: */
               /* notice how you pass a call back for tx updates too */
-              const result = tx(writeContracts.YourContract.setPurpose(newPurpose), update => {
+              const result = tx(writeContracts.YourHecoContract.setPurpose(newPurpose), update => {
                 console.log("📡 Transaction Update:", update);
                 if (update && (update.status === "confirmed" || update.status === 1)) {
                   console.log(" 🍾 Transaction " + update.hash + " finished!");
                   console.log(
                     " ⛽️ " +
-                    update.gasUsed +
-                    "/" +
-                    (update.gasLimit || update.gas) +
-                    " @ " +
-                    parseFloat(update.gasPrice) / 1000000000 +
-                    " gwei",
+                      update.gasUsed +
+                      "/" +
+                      (update.gasLimit || update.gas) +
+                      " @ " +
+                      parseFloat(update.gasPrice) / 1000000000 +
+                      " gwei",
                   );
                 }
               });
@@ -84,7 +84,7 @@ export default function ExampleUI({
         <Divider />
         Your Contract Address:
         <Address
-          address={readContracts && readContracts.YourContract ? readContracts.YourContract.address : null}
+          address={readContracts && readContracts.YourHecoContract ? readContracts.YourHecoContract.address : null}
           ensProvider={mainnetProvider}
           fontSize={16}
         />
@@ -93,7 +93,7 @@ export default function ExampleUI({
           <Button
             onClick={() => {
               /* look how you call setPurpose on your contract: */
-              tx(writeContracts.YourContract.setPurpose("🍻 Cheers"));
+              tx(writeContracts.YourHecoContract.setPurpose("🍻 Cheers"));
             }}
           >
             Set Purpose to &quot;🍻 Cheers&quot;
@@ -107,7 +107,7 @@ export default function ExampleUI({
               here we are sending value straight to the contract's address:
             */
               tx({
-                to: writeContracts.YourContract.address,
+                to: writeContracts.YourHecoContract.address,
                 value: utils.parseEther("0.001"),
               });
               /* this should throw an error about "no fallback nor receive function" until you add it */
@@ -121,7 +121,7 @@ export default function ExampleUI({
             onClick={() => {
               /* look how we call setPurpose AND send some value along */
               tx(
-                writeContracts.YourContract.setPurpose("💵 Paying for this one!", {
+                writeContracts.YourHecoContract.setPurpose("💵 Paying for this one!", {
                   value: utils.parseEther("0.001"),
                 }),
               );
@@ -136,9 +136,9 @@ export default function ExampleUI({
             onClick={() => {
               /* you can also just craft a transaction and send it to the tx() transactor */
               tx({
-                to: writeContracts.YourContract.address,
+                to: writeContracts.YourHecoContract.address,
                 value: utils.parseEther("0.001"),
-                data: writeContracts.YourContract.interface.encodeFunctionData("setPurpose(string)", [
+                data: writeContracts.YourHecoContract.interface.encodeFunctionData("setPurpose(string)", [
                   "🤓 Whoa so 1337!",
                 ]),
               });
@@ -152,7 +152,7 @@ export default function ExampleUI({
 
       {/*
         📑 Maybe display a list of events?
-          (uncomment the event and emit line in YourContract.sol! )
+          (uncomment the event and emit line in YourHecoContract.sol! )
       */}
       <div style={{ width: 600, margin: "auto", marginTop: 32, paddingBottom: 32 }}>
         <h2>Events:</h2>
@@ -202,16 +202,16 @@ export default function ExampleUI({
           <div style={{ marginTop: 8 }}>
             Date Pickers?
             <div style={{ marginTop: 2 }}>
-              <DatePicker onChange={() => { }} />
+              <DatePicker onChange={() => {}} />
             </div>
           </div>
 
           <div style={{ marginTop: 32 }}>
-            <Slider range defaultValue={[20, 50]} onChange={() => { }} />
+            <Slider range defaultValue={[20, 50]} onChange={() => {}} />
           </div>
 
           <div style={{ marginTop: 32 }}>
-            <Switch defaultChecked onChange={() => { }} />
+            <Switch defaultChecked onChange={() => {}} />
           </div>
 
           <div style={{ marginTop: 32 }}>

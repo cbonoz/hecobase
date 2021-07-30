@@ -4,11 +4,11 @@ pragma solidity >=0.8.0 <0.9.0;
 import "hardhat/console.sol";
 //import "@openzeppelin/contracts/access/Ownable.sol"; //https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
 
-contract YourContract {
+contract YourHecoContract {
 
-  //event SetPurpose(address sender, string purpose);
+  event SetPurpose(address sender, string purpose);
 
-  string public purpose = "Building Unstoppable Apps";
+  string public purpose = "Starter Heco Contract";
 
   constructor() {
     // what should we do on deploy?
@@ -16,7 +16,7 @@ contract YourContract {
 
   function setPurpose(string memory newPurpose) public {
       purpose = newPurpose;
-      console.log(msg.sender,"set purpose to",purpose);
-      //emit SetPurpose(msg.sender, purpose);
+      console.log(msg.sender, "setPurpose", purpose);
+      emit SetPurpose(msg.sender, purpose);
   }
 }

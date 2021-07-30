@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+.header-logo {
+  height: 45px;
+}
+
+.container {
+  padding-top: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}

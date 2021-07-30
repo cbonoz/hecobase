@@ -1,12 +1,26 @@
+<p align='center'>
+    <img src='./img/logo_square.png'/>
+</p>
+
 # Hecobase
 
 Hecobase is a starter project for connecting and testing your smart contracts on Heco networks (testnet and mainnet).
 
-Bootstrap your projects and get deploying on the Heco main and test networks in no time.
+Bootstrap your projects and get deploying on the Heco main and test networks in no time. Use Hecobase to:
+
+1. Create and connect wallets.
+2. Connect to existing deployed Heco smart contracts.
+3. Call methods on your existing smart contracts.
 
 Going after the <a href="https://hecochain-hackathon.devpost.com/rules" target="_blank">Toolkits on HECO</a> category challenge for the hecochain hackathon.
 
 ## Motivation
+
+## Deploying and linking contract
+
+- Update hardhat.config.js to your target network (Heco or other Eth based platform).
+- To use deploy script, ensure you have a heco wallet with sufficient funds.
+- Update TARGET_NETWORK to point to same network.
 
 ## Quick Start
 
@@ -40,7 +54,7 @@ cd hecobase
 yarn deploy
 ```
 
-🔏 Edit your smart contract `YourContract.sol` in `packages/hardhat/contracts`
+🔏 Edit your smart contract `YourHecoContract.sol` in `packages/hardhat/contracts`
 
 📝 Edit your frontend `App.jsx` in `packages/react-app/src`
 
