@@ -6,7 +6,7 @@
 
 Hecobase is a starter project for connecting and testing your smart contracts on Heco networks (testnet and mainnet). Hecobase extends a base open source project scaffold-eth so you can test other ethereum based projects as well.
 
-Built for the <a href="https://hecochain-hackathon.devpost.com/rules" target="_blank">Toolkits on HECO</a> category challenge for the hecochain hackathon.
+Built for the <a href="https://hecochain-hackathon.devpost.com/rules" target="_blank">Toolkits on HECO</a> 2021 hecochain hackathon.
 
 Bootstrap your projects and get deploying on the Heco main and test networks in no time. Use Hecobase to:
 
@@ -26,9 +26,7 @@ Use the faucet to grant https://scan-testnet.hecochain.com/faucet
 
 The contract `YourHecoContract.sol` should now be deployed. By default, the app will connect to the HECO testnet.
 
-## Screenshots
-
-<h3>Home page</h3>
+### Home page
 <p align='center'>
     <img src='./img/home.png'/>
 </p>
