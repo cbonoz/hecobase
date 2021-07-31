@@ -82,7 +82,7 @@ export const NETWORKS = {
     gasPrice: 1000000000,
     rpcUrl: "https://http-testnet.hecochain.com",
     faucet: "https://scan-testnet.hecochain.com/faucet",
-    blockExplorer: "https://scan-testnet.hecochain.com",
+    blockExplorer: "https://testnet.hecoinfo.com/",
   },
   heco: {
     name: "Heco Mainnet",
@@ -91,7 +91,7 @@ export const NETWORKS = {
     price: 1,
     gasPrice: 1000000000,
     rpcUrl: "https://http-mainnet.hecochain.com",
-    blockExplorer: "https://hecoinfo.com",
+    blockExplorer: "https://hecoinfo.com/",
   },
   mumbai: {
     name: "mumbai",

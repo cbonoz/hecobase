@@ -8,7 +8,7 @@ contract YourHecoContract {
 
   event SetPurpose(address sender, string purpose);
 
-  string public purpose = "Starter Heco Contract";
+  string public purpose = "Heco Test Smart Contract";
 
   constructor() {
     // what should we do on deploy?
