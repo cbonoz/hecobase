@@ -26,6 +26,13 @@ Use the faucet to grant https://scan-testnet.hecochain.com/faucet
 
 The contract `YourHecoContract.sol` should now be deployed. By default, the app will connect to the HECO testnet.
 
+## Screenshots
+
+<h3>Home page</h3>
+<p align='center'>
+    <img src='./img/home.png'/>
+</p>
+
 ## Quick Start
 
 Prerequisites: [Node](https://nodejs.org/en/download/) plus [Yarn](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
@@ -36,22 +43,15 @@ Prerequisites: [Node](https://nodejs.org/en/download/) plus [Yarn](https://class
 git clone https://github.com/cbonoz/hecobase.git
 ```
 
-> install and start your 👷‍ Hardhat chain:
+> Start your 📱 frontend:
 
 ```bash
 cd hecobase
-yarn install
-yarn chain
-```
-
-> in a second terminal window, start your 📱 frontend:
-
-```bash
-cd hecobase
+yarn
 yarn start
 ```
 
-> in a third terminal window, 🛰 deploy your contract:
+> in another terminal window, 🛰 deploy the sample `YourHecoContract` smart contract:
 
 ```bash
 cd hecobase
@@ -79,4 +79,4 @@ yarn deploy
 
 Heco contracts
 
-- https://testnet.hecoinfo.com/address/0x7af326b6351c8a9b8fb8cd205cbe11d4ac5fa836#contracts
+- Sample deployed contract on testnet: https://testnet.hecoinfo.com/address/0x12fC865Bb0210B45177ad7018F548fd79099c1De
