@@ -11,3 +11,12 @@
   max-width: 1100px;
   margin: 0 auto;
 }
+
+.subtitle-text {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.ant-input {
+  max-width: 600px;
+}

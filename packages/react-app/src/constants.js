@@ -175,5 +175,7 @@ export const NETWORK = chainId => {
 // Change this target network.
 export const TARGET_NETWORK = NETWORKS.hecoTest; // or use NETWORKS.heco for main net.
 
-export const APP_NAME = "Hecobase"
-export const APP_DESCRIPTION = "Scaffold your HECO blockchain project"
+export const APP_NAME = "Hecobase";
+export const APP_DESCRIPTION = "An extendable UI scaffold for testing your HECO blockchain smart contracts.";
+export const APP_ABOUT =
+  "Hecobase is a starter project for connecting and testing your smart contracts on Heco networks (testnet and mainnet). Hecobase extends the popular project scaffold-eth so you can test other ethereum based projects as well.";

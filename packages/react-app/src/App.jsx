@@ -387,8 +387,19 @@ function App(props) {
 
         <Switch>
           <Route exact path="/contract">
-            <div className='container'>
-              <Input onChange={e => setContractAddr(e.target.value)} value={contractAddr} />
+            <div className="container">
+              <p>
+                To test your HECO smart contract, make any changes in <b>YourHecoContract.sol</b> and redeploy. The app
+                will automatically load your newly deployed contract.
+              </p>
+
+              <p>
+                Follow the guide{" "}
+                <a href="https://docs.hecochain.com/#/en-us/wallet?id=testnet" target="_blank">
+                  here
+                </a>{" "}
+                to set up your metamask account with the HECO testnet.
+              </p>
 
               <Contract
                 name="YourHecoContract"
